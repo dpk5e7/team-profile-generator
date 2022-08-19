@@ -78,6 +78,8 @@ Note "npm start" can be replaced with "node index.js" and the application will e
 
 ![ScreenshotHTML](./assets/images/screenshot_html.png)
 
+[Video Link](https://drive.google.com/file/d/1GjwUvUtFDKZYXj-uDgfaRx6NZZcrA85L/view)
+
 ## Contributing
 
 As this project is part of an individual assignment for the University of Denver's Coding Bootcamp, it would be inappropriate for anyone else to contribute to this project.
