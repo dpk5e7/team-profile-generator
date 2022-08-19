@@ -3,7 +3,7 @@ const Engineer = require("../lib/Engineer");
 describe("Engineer", () => {
   describe("Initialization", () => {
     it("should have a github username with a non-empty string", () => {
-      const eng = () => new Engineer("Dan", 1, "any@email.com", "");
+      const eng = () => new Engineer("Luke Skywalker", 1, "luke@starwars.com", "");
       const err = new Error(
         "Expected parameter 'github' must be a non-empty string"
       );
@@ -14,7 +14,7 @@ describe("Engineer", () => {
 
   describe("getRole", () => {
     it("should return Engineer", () => {
-      const eng = new Engineer("Dan", 1, "any@email.com", "Mizzou");
+      const eng = new Engineer("Luke Skywalker", 1, "luke@starwars.com", "jediMaster1138");
       const role = eng.getRole();
       expect(role).toEqual("Engineer");
     });
@@ -22,9 +22,14 @@ describe("Engineer", () => {
 
   describe("getGithub", () => {
     it("should return Engineer's github username", () => {
-      const eng = new Engineer("Dan", 1, "any@email.com", "Mizzou");
+      const eng = new Engineer(
+        "Luke Skywalker",
+        1,
+        "luke@starwars.com",
+        "jediMaster1138"
+      );
       const role = eng.getGithub();
-      expect(role).toEqual("Mizzou");
+      expect(role).toEqual("jediMaster1138");
     });
   });
 });
