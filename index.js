@@ -4,4 +4,4 @@ const TeamProfileGenerator = require("./lib/TeamProfileGenerator");
 const tpg = new TeamProfileGenerator();
 
 // Start generating
-tpg.start();
+tpg.start(process.argv[2]);
